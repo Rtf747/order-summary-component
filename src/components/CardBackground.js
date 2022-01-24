@@ -3,7 +3,9 @@ import BackgroundImage from '../images/pattern-background-mobile.svg';
 
 const Image = styled.img`
  position: absolute;
- z-index: -1;
+ top: 0;
+ left: 0;
+ z-index: -10;
  width: 100vw;
 `;
 

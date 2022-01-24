@@ -6,7 +6,15 @@ import CardPrice from './CardPrice';
 import CardTitle from './CardTitle';
 
 const Section = styled.section`
- background-color: red;
+ width: 88vw;
+ height: auto;
+ background-color: white;
+ border-radius: 1rem;
+ box-shadow: 0 0.8rem 1rem rgb(197, 209, 247);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 `;
 
 const Card = () => {
