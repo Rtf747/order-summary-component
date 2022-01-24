@@ -15,6 +15,10 @@ const Section = styled.section`
  align-items: center;
  justify-content: center;
  flex-direction: column;
+
+ @media (min-width: 1440px) {
+  width: 25vw;
+ }
 `;
 
 const Card = () => {

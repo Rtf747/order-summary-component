@@ -1,5 +1,6 @@
 import styled from 'styled-components';
-import BackgroundImage from '../images/pattern-background-mobile.svg';
+import BackgroundImageMobile from '../images/pattern-background-mobile.svg';
+import BackgroundImageDesktop from '../images/pattern-background-desktop.svg';
 
 const Image = styled.img`
  position: absolute;
@@ -9,10 +10,16 @@ const Image = styled.img`
  width: 100vw;
 `;
 
+const windowWidth = window.innerWidth;
+
 const CardBackground = () => {
  return (
   <>
-   <Image className='pattern' src={BackgroundImage} alt='Background-pattern' />
+   <Image
+    className='pattern'
+    src={windowWidth > 375 ? BackgroundImageDesktop : BackgroundImageMobile}
+    alt='Background-pattern'
+   />
   </>
  );
 };
